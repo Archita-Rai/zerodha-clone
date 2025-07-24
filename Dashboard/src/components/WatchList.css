@@ -1,0 +1,66 @@
+/* Only apply to small/medium screens */
+@media (max-width: 991.98px) {
+  .custom-watchlist-sidebar {
+    position: fixed;
+    top:0 !important;
+    left: -80%;
+    height: 100vh;
+    width: 50%;
+    background-color: #fff;
+    z-index: 1050;
+    transition: left 0.3s ease-in-out;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  @media (max-width: 768px) {
+    .custom-watchlist-sidebar{
+        width:60%;
+    } 
+  }
+  @media (max-width: 572px) {
+    .custom-watchlist-sidebar{
+        width:80%;
+    } 
+  }
+  .custom-watchlist-sidebar.open {
+    left: 0;
+  }
+
+  .watchlist-toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    z-index: 1060;
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .search {
+    margin-left:2rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  .watchlist-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+}
+

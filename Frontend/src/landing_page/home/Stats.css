@@ -1,0 +1,31 @@
+.ecosystem-img{
+    width:80% !important;
+    background-size: cover !important;
+    background-position: center !important
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .ecosystem-img{
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ecosystem-img{
+     width:75% !important;
+     padding-top: 2rem !important;
+     margin-left: 2.5rem !important;
+  }
+} 
+
+.link-info a{
+    text-decoration: none;
+}
+
+.link-info{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  
+}

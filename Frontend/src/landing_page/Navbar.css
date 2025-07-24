@@ -1,0 +1,89 @@
+.navbar {
+  background-color: white;
+}
+@media only screen and (max-width: 992px) {
+  .custom-navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white; /* or match your navbar color */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* optional */
+  }
+}
+.zerodha-logo {
+  width: 150px !important;
+  display: inline-block !important;
+  background-size: cover !important;
+  /* margin-left: 0rem !important; */
+}
+ @media (min-width: 992px) and (max-width: 2000px) {
+  .zerodha-logo {
+    margin-left: 6rem !important;
+  }
+}
+/* @media only screen and (max-width: 1400px) {
+  .zerodha-logo {
+    width: 14% !important;
+    margin-left: 6rem !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .zerodha-logo {
+    width: 15% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .zerodha-logo {
+    margin-left: 0rem !important;
+    width: 18% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .zerodha-logo {
+    width: 21% !important;
+    margin-left: 0rem !important;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .zerodha-logo {
+    width: 27% !important;
+    margin-left: 0rem !important;
+  }
+}  */
+
+.navbar-nav {
+  padding-right: 6rem !important;
+}
+
+.nav-link {
+  font-size: 1.15rem !important;
+  font-weight: 400 !important;
+}
+.nav-link:hover {
+  color: #387ED1 !important;
+}
+.navbar-toggler{
+  border-color: #387ED1 !important;
+}
+.navbar-toggler i{
+  color:#387ED1;
+}
+/* to remove toggler icon border when it is activate */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width:992px){
+   .nav-link:hover{
+    background-color: rgb(248, 247, 247);
+    border-radius: 0.5rem;
+   }
+}
+

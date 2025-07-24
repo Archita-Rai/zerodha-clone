@@ -1,0 +1,10 @@
+.signup-btn {
+  width: 20% !important;
+  margin: auto !important;
+}
+@media only screen and (max-width: 528px) {
+  .signup-btn{
+    font-size: 0.5rem !important;
+    width:40% !important;
+  }
+}

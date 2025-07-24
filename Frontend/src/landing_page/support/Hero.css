@@ -1,0 +1,17 @@
+.hero-section{
+    background-color: rgb(56,126,209);
+}
+
+.supportWraper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7rem;
+}
+
+.ticket-input{
+    outline: none;
+}
+
+.ticket-links{
+    font-size: 1.1rem;
+}

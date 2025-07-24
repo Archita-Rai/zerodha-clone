@@ -1,0 +1,33 @@
+.signup-btn {
+  width: 20% !important;
+  margin: auto !important;
+}
+
+@media only screen and (max-width:992px) {
+     .open-account-heading{
+        font-size:2rem !important ;
+    }
+    .signup-btn{
+        width:25%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .signup-btn{
+        width:30% !important;
+    }
+}
+@media only screen and (max-width:528px) {
+     .open-account-heading{
+        font-size:1.5rem !important ;
+    }
+    .signup-btn{
+        width:40% !important;
+    }
+}
+
+@media only screen and (max-width:466px) {
+    .signup-btn{
+        width:60% !important;
+    }
+}

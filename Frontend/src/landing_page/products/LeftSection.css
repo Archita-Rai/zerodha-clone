@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1400px) {
+  .left-prop-img {
+    width: 100% !important;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .left-prop-img {
+    width:70% !important;
+    background-size: cover;
+    background-position: center;
+  }
+}
