@@ -1,15 +1,14 @@
-import { useState,useEffect } from "react";
-import axios from "axios"
+import { useState, useEffect } from "react";
+import axios from "axios";
 // import { holdings } from "../data/data";
 const Holdings = () => {
-
-  const [allHoldings,setAllHoldings] = useState([]);
-  useEffect(()=>{
-    axios.get("http://localhost:3002/allHoldings").then((res)=>{
-      console.log(res.data)
+  const [allHoldings, setAllHoldings] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:3002/allHoldings").then((res) => {
+      console.log(res.data);
       setAllHoldings(res.data);
-    })
-  },[])
+    });
+  }, []);
   return (
     <>
       <h3 className="title">Holdings (13)</h3>
@@ -17,7 +16,13 @@ const Holdings = () => {
 
       <div className="order-table">
         <table>
-            <tr>
+          <tr>
+            <th>Name</th>
+            <th>Qty.</th>
+            <th>Avg.</th>
+            <th>Price</th>
+            <th>Curr.Val.</th>
+            <th>Profit</th>
             <th>Net chg.</th>
             <th>Day chg.</th>
           </tr>

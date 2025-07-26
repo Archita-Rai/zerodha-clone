@@ -14,13 +14,7 @@ import {
   KeyboardDoubleArrowLeft,
 } from "@mui/icons-material";
 
-
-// import {
-//   KeyboardDoubleArrowRight,
-//   KeyboardDoubleArrowLeft,
-// } from "@mui/icons-material";
 import "./WatchList.css";
-
 
 const WatchList = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +44,9 @@ const WatchList = () => {
       </div>
 
       {/* Sidebar */}
-      <div className={`custom-watchlist-sidebar ${isOpen ? "open" : ""} d-lg-none`}>
+      <div
+        className={`custom-watchlist-sidebar ${isOpen ? "open" : ""} d-lg-none`}
+      >
         <div className="search-bar me-4">
           <input
             type="text"

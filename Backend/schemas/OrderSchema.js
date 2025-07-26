@@ -1,4 +1,4 @@
-const {Schema} = require("mongose")
+const {Schema} = require("mongoose")
 
 const OrderSchema = new Schema({
     name:String,

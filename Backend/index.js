@@ -3,7 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const { HoldingModel } = require("./models/HoldingModel");
 const { PositionModel } = require("./models/PositionModel");
-const bodyParser = require('body-parser');
+const { OrderModel } = require("./models/OrderModel");
+const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
@@ -191,15 +192,32 @@ async function main() {
 //   res.send("done")
 // });
 
-app.get("/allHoldings",async(req,res)=>{
-  let allHoldings = await HoldingModel.find({})
-  res.json(allHoldings)
+app.get("/allHoldings", async (req, res) => {
+  let allHoldings = await HoldingModel.find({});
+  res.json(allHoldings);
 });
 
-app.get("/allPositions",async(req,res)=>{
-  let allPositions = await PositionModel.find({})
+app.get("/allPositions", async (req, res) => {
+  let allPositions = await PositionModel.find({});
   res.json(allPositions);
-})
+});
+
+app.post("/newOrder", async (req, res) => {
+  let newOrder = new OrderModel({
+    name: req.body.name,
+    qty: req.body.qty,
+    price:req.body.price,
+    mode:req.body.mode,
+  });
+  await newOrder.save();
+  res.send("order-saved");
+});
+
+app.get("/allOrders", async (req, res) => {
+  let allOrders = await OrderModel.find({});
+  res.json(allOrders);
+});
+
 app.listen(PORT, (req, res) => {
   console.log("app is lestening on the port 8080");
 });
